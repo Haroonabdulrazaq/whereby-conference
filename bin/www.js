@@ -4,9 +4,10 @@
  * Module dependencies.
  */
 
-var app = require('../app');
-var debug = require('debug')('whereby-conference:server');
-var http = require('http');
+import app from '../app.js';
+import debugFactory from 'debug';
+const debug = debugFactory('whereby-conference:server');
+import http from 'http';
 
 /**
  * Get port from environment and store in Express.
